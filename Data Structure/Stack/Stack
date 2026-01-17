@@ -16,3 +16,4 @@ size()→কয়টা element আছে চেক করতে।
 # Interview question 
 ★Stack কেন ব্যবহার করছো? LIFO nature এর জন্য। 
 ★stack কপি করা যায় using copy constructor or assignment।
+★stack প্রিন্ট করার safe উপায় pass by value করা। by reference করলে আসল stack empty হয়ে যাবে। pass by reference তখন করা উচিৎ যখন চাইবো আসল container এ ও পরিবর্তন হোক। 
