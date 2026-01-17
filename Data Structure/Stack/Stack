@@ -12,5 +12,7 @@ Overflow→স্ট্যাকের সাইজ ৩।element রাখা �
 Underflow→stack খালি। তারপরও pop() ব্যবহার করলে হবে underflow। এখন কথা হলো বুঝবো কিভাবে stack খালি কিনা। top=-1 হওয়া মানে খালি। এই -1 আমরা globally declare করে রাখবো। অর্থাৎ implementation এর সময় globally top কে আমরা -1 করে রাখবো তথা -1 দিয়ে initialy stack টা empty করে রাখবো।এরপর ডেটা insert করব delete করবো।
 7)empty()→খালি কিনা চেক করতে।
 size()→কয়টা element আছে চেক করতে।
+8) পুরো stack print করতে top print করে সেটা pop করে দেওয়া লাগে। আর যদি stack এ কোনো পরিবর্তন করতে না চাও তবে আগে কপি করে অন্য stack (temp stack) এ রাখতে হবে element গুলো।
 # Interview question 
-★Stack কেন ব্যবহার করছো? LIFO nature এর জন্য।
+★Stack কেন ব্যবহার করছো? LIFO nature এর জন্য। 
+★stack কপি করা যায় using copy constructor or assignment।
