@@ -10,10 +10,26 @@ display()→Used to see all the elements of the stack. এটার সাহা
 6)push() এবং pop() এর সাথে related term হচ্ছে overflow এবং underflow।
 Overflow→স্ট্যাকের সাইজ ৩।element রাখা যাবে ৩টা (index 0,1,2।নিচ থেকে উপরে।) কিন্তু রাখতে চাচ্ছি ৪ টা। এটাকে বলে stack overflow।
 Underflow→stack খালি। তারপরও pop() ব্যবহার করলে হবে underflow। এখন কথা হলো বুঝবো কিভাবে stack খালি কিনা। top=-1 হওয়া মানে খালি। এই -1 আমরা globally declare করে রাখবো। অর্থাৎ implementation এর সময় globally top কে আমরা -1 করে রাখবো তথা -1 দিয়ে initialy stack টা empty করে রাখবো।এরপর ডেটা insert করব delete করবো।
+empty stack এ top()/pop() করলে runtime error হয়।
+if(!st.empty())
+    cout << st.top();
+if(!st.empty())
+    cout << st.pop();
 7)empty()→খালি কিনা চেক করতে।
 size()→কয়টা element আছে চেক করতে।
 8) পুরো stack print করতে top print করে সেটা pop করে দেওয়া লাগে। আর যদি stack এ কোনো পরিবর্তন করতে না চাও তবে আগে কপি করে অন্য stack (temp stack) এ রাখতে হবে element গুলো।
+Best way ফাংশন ব্যবহার করো।
+void printStack(stack<int> st) {
+//pass by value → copy
+    while(!st.empty()) {
+        cout << st.top() << " ";
+        st.pop();
+    }
+    cout << endl;
+}
+int main এ ➤printStack(st);
 # Interview question 
 ★Stack কেন ব্যবহার করছো? LIFO nature এর জন্য। 
 ★stack কপি করা যায় using copy constructor or assignment।
-★stack প্রিন্ট করার safe উপায় pass by value করা। by reference করলে আসল stack empty হয়ে যাবে। pass by reference তখন করা উচিৎ যখন চাইবো আসল container এ ও পরিবর্তন হোক। 
+★stack প্রিন্ট করার safe উপায় pass by value করা। by reference করলে আসল stack empty হয়ে যাবে। pass by reference তখন করা উচিৎ যখন চাইবো আসল container এ ও পরিবর্তন হোক।
+
