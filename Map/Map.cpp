@@ -24,13 +24,16 @@ auto it = mp.find(3) // it = {3, 1}. Here it is a iterator or pointer which poin
 cout<<(*it).second<<endl;
 
 //v.end(), mp.end() ২ টা নির্দেশ করে ভেক্টর ও ম্যাপের শেষ index এর পরের index এর iterator বা pointer। অর্থাৎ যেখানে কোনো ভ্যালু থাকেনা (তাই * দিয়ে dereference ও করা যায়না।)।
-/*auto it = mp.find(3);
+/* Check if a key exists 
+auto it = mp.find(3);
 
- if(it != mp.end()){
-    cout << "Found: " << it->second << endl;
-}
-else{
-    cout << "Not Found" << endl;
+    if(it != mp.end()){
+        cout << "Key exists." << endl;
+        cout << "Value: " << (*it).second << endl;
+    }
+    else{
+        cout << "Key doesn't exist." << endl;
+    }
 }*/
 // কারণ key না পেলে mp.find() return করে mp.end()।
 
