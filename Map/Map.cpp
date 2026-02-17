@@ -37,6 +37,19 @@ auto it = mp.find(3);
 }*/
 // কারণ key না পেলে mp.find() return করে mp.end()।
 
+   auto it = mp.lower_bound(2);
+   auto it = mp.upper_bound(3);
 }
 // map stores unique keys in sorted order (key এর sorted order অনুযায়ী store হয়।), similar to set data structure. 
 //erase, swap, size, empty are same as above.
+
+void explainMultimap(){
+//Only difference is we can store duplicate keys also. Similar to set and multiset.
+//We cannot use mp[key] here. As here we will can use multiple keys of same name.
+// Will also store in sorted order of keys. {1, 2}, {1, 3}.
+}
+
+void explainUnorderMap(){
+// Similar to but only difference is values will not be stored in sorted order of keys. And will have unique keys.
+// Also map works in logarithmic time and unordered map in O(1) or constant time. In very rare worst case O(n).
+}
