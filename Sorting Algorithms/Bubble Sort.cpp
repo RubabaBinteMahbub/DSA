@@ -1,6 +1,12 @@
 // Bubble Sort
-// Time complexity : O(n^2)
+
+// পাশাপাশি ২টা element তুলনা করে ও swap করে।
+// কাজ চলে / iteration n-1 বার।
+// শেষ থেকে ১টা করে নতুন element sort হয় প্রতি iteration এ।
+
+//Time complexity : O(n^2)
 // Space complexity : O(n)
+
 // Sort in increasing order
 
 #include<bits/stdc++.h>
