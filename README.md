@@ -1,7 +1,6 @@
 🟠 STL হচ্ছে DSA–র practical implementation।
 <br><br>
 🟠 প্রথমে DSA concept ভালো করে বুঝবে → তারপর STL ব্যবহার করবে।<br>
-না বুঝে শুধু STL ব্যবহার করলে interview এ ধরা পড়ে যাবে। 
 <br><br>
 🟠 কখন Manual Implementation দরকার?<br>
 🔹Learning / interview purpose → concept বোঝার জন্য<br>
