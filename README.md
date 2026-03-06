@@ -1,4 +1,4 @@
-🟠 STL হচ্ছে DSA–র practical implementation।
+/*🟠 STL হচ্ছে DSA–র practical implementation।
 <br><br>
 🟠 প্রথমে DSA concept ভালো করে বুঝবে → তারপর STL ব্যবহার করবে।<br>
 <br><br>
@@ -30,4 +30,4 @@ Benefit: Code ছোট, tested, faster.
 <br><br>
 🟠 Implication<br>
 👉 DSA শেখার সময় → Manual implementation শিখতে হবে।<br>
-👉 Competitive programming / real project → STL ব্যবহার করতে হবে।
+👉 Competitive programming / real project → STL ব্যবহার করতে হবে।*/
