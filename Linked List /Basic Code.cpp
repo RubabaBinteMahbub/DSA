@@ -29,3 +29,10 @@ int main() {
 
     return 0;
 }
+
+/*
+✔ Node = data + next
+✔ Node* = pointer (address ধরে)
+✔ head = first node
+✔ temp = ঘুরার জন্য (traversal)
+*/
