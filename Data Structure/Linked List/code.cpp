@@ -32,7 +32,7 @@ public :
         if(head==NULL){
            head=tail=newNode;   // case : it's an empty linked list
         }else{
-          newNode->next = head;
+          newNode->next = head;// newNode এর next হিসেবে আগে NULL ছিল এখন বর্তমান head কে রাখলাম, আর newNode কে head হিসেবে। newNode কেন্দ্রিক চিন্তা-ভাবনা।
           head = newNode;
        }
     }
