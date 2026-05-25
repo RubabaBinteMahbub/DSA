@@ -1,4 +1,4 @@
-// Bubble sort
+// Selection sort
 
 // Time Complexity : O(n^2)
 // Space Complexity : O(n)
